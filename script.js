@@ -86,7 +86,7 @@ function checkTie() {
 }
 
 function minimax(newBoard, player) {
-    var availSpots = emptySquares(newBoard)
+    var availSpots = emptySquares()
     if(checkWin(newBoard, player)) {
         return {score: -10};
     } else if(checkWin(newBoard, aiPlayer)) {
