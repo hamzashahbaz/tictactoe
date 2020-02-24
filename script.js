@@ -90,7 +90,7 @@ function minimax(newBoard, player) {
     if(checkWin(newBoard, player)) {
         return {score: -10};
     } else if(checkWin(newBoard, aiPlayer)) {
-        return {score: 10};
+        return {score: 20};
     } else if(availSpots.length === 0) {
         return {score: 0}
     }
