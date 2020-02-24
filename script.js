@@ -69,7 +69,8 @@ function emptySquares() {
 }
 
 function bestSpot() {
-    return emptySquares()[0];
+    //return emptySquares()[0];
+    return minimax(origBoard, aiPlayer).index;
 }
 
 function checkTie() {
@@ -81,6 +82,7 @@ function checkTie() {
         declareWinner('Tie Game!')
         return true;
     }
+    return false;
 }
 
 function minimax(newBoard, player) {
